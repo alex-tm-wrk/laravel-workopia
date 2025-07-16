@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Applicant;
 use App\Models\Job;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -19,6 +20,7 @@ class DatabaseSeeder extends Seeder
         // Truncate tables
         Schema::disableForeignKeyConstraints();
         DB::table('job_user_bookmarks')->truncate();
+        Applicant::truncate();
         Job::truncate();
         User::truncate();
         Schema::enableForeignKeyConstraints();
