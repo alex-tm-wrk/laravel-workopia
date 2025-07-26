@@ -1,4 +1,4 @@
-<form method="GET" action="#" class="block mx-5 space-y-2 md:mx-auto md:space-x-2">
+<form method="GET" action="{{ route('jobs.search') }}" class="block mx-5 space-y-2 md:mx-auto md:space-x-2">
     <input type="text" name="keywords" placeholder="Keywords" class="w-full md:w-72 bg-gray-100/75 px-4 py-3 focus:outline-none"
         value="{{request('keywords')}}" />
     <input type="text" name="location" placeholder="Location" class="w-full md:w-72 bg-gray-100/75 px-4 py-3 focus:outline-none"
